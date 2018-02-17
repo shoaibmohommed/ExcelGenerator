@@ -47,7 +47,8 @@ namespace DevExpressExcelDashboard
 			try
 			{
 				FileInfo file = new FileInfo(RESULT_FILE);
-				if (IsFileAlreadyOpen(file))
+
+				if (file.Exists && IsFileAlreadyOpen(file))
 				{
 					return;
 				}
@@ -134,12 +135,6 @@ namespace DevExpressExcelDashboard
 		/// <returns></returns>
 		private bool IsFileAlreadyOpen(FileInfo file)
 		{
-
-			if (!file.Exists)
-			{
-				MessageBox.Show("File does not exists, Please create first.");
-				return true;
-			}
 			FileStream stream = null;
 
 			try
@@ -161,11 +156,15 @@ namespace DevExpressExcelDashboard
 		private void openBtn_Click(object sender, EventArgs e)
 		{
 			FileInfo file = new FileInfo(RESULT_FILE);
+			if (!file.Exists)
+			{
+				MessageBox.Show("File does not exists, Please create first.");
+				return;
+			}
 			if (!IsFileAlreadyOpen(file))
 			{
 				System.Diagnostics.Process.Start(file.FullName);
 			}
-
 		}
 	}
 }
