@@ -1,0 +1,47 @@
+﻿[
+	{
+		"id": "5001",
+		"type": "None",
+		"price": 0
+	},
+	{
+		"id": "5002",
+		"type": "Glazed",
+		"price": 100.32
+	},
+	{
+		"id": "5005",
+		"type": "Sugar",
+		"price": 123.2
+	},
+	{
+		"id": "5007",
+		"type": "Powdered Sugar",
+		"price": 12.4
+	},
+	{
+		"id": "5006",
+		"type": "Chocolate with Sprinkles",
+		"price": 123
+	},
+	{
+		"id": "5003",
+		"type": "Chocolate",
+		"price": 332
+	},
+	{
+		"id": "5004",
+		"type": "Maple",
+		"price": 322
+	},
+	{
+		"id": "5090",
+		"type": "Apple pie",
+		"price": 402.2
+	},
+	{
+		"id": "1304",
+		"type": "Banana shake",
+		"price": 2
+	}
+]
